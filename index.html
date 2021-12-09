@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Alura DEV</title>
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/base.css">
+      <link rel="stylesheet" href="css/nav-bar.css">
+      <link rel="stylesheet" href="css/corpo.css">
+      <link rel="stylesheet" href="css/menu/menu.css">
+      <link rel="stylesheet" href="css/projeto/projeto.css">
+      <link rel="stylesheet" href="css/projeto/seu-projeto.css">
+      <link rel="stylesheet" href="css/projeto/personalizacao.css">
    
-</body>
+      
+      <title>Alura DEV</title>
+   </head>
+   <body>
+      
+      <header class="cabecalho">
+         <img class="cabecalho__logo" src="img/logo__alura/Logologo__aluraDEV.svg" alt="logo alura dev">
+
+         <input class="cabecalho__pesquisa texto--input" type="text" placeholder="Busque por algo">
+
+         <div class="cabecalho__perfil">
+            <div class="perfil__img"></div>
+            <p class="perfil__nome">Gustavo</p>
+         </div>
+      </header>
+
+      <main class="corpo">
+         <section class="menu">
+            <h2 class="sidebar--titulo">Menu</h2>
+
+            <nav class="menu__navegacao">
+               <a class="menu__link" href="#"><img class="link__img link--ativo" src="img/menu/editor-img.svg" alt=""><p class="link__text link--ativo">Editor de código</p></a>
+               <a class="menu__link" href="#"><img class="link__img" src="img/menu/comunidade-img.svg" alt=""><p class="link__text">Comunidade</p></a>
+            </nav>
+         </section>
+
+         <section class="projeto">
+            
+            <div class="seu-projeto">
+               <h2 class="sidebar--titulo">Seu projeto</h2>
+
+               <input class="seu-projeto__nome texto--input" type="text" placeholder="Nome do seu projeto">
+               <textarea class="seu-projeto__descricao texto--input" type="text" placeholder="Descrição do seu projeto"></textarea>
+            </div>
+
+            <div class="personalizacao">
+               <h2 class="sidebar--titulo">Personalização</h2>
+
+               <datalist id="code">
+                  <option value="JavaScrip">
+                  <option value="HTML">
+                  <option value="CSS">
+               </datalist>
+
+               <input class="personalizacao__codigo texto--input" type="text" list="code" placeholder="Escolha um codigo">
+
+               <input class="personalizacao__cor" type="color">
+
+               <button class="personalizacao__botao">Salvar projeto</button>
+            </div>
+         </section>
+      </main>
+
+   </body>
 </html>

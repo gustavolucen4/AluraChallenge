@@ -1,0 +1,17 @@
+.seu-projeto{
+   display: flex;
+   flex-direction: column;
+}
+
+.seu-projeto__nome{
+   margin-top: 1rem;
+   width: 272px;
+   height: 56px;
+}
+
+.seu-projeto__descricao{
+   resize: none;
+   margin-top: 1rem;
+   width: 272px;
+   height: 80px;
+}

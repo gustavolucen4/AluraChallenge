@@ -1,0 +1,52 @@
+:root{
+   --azul-escuro-corpo: #051D3B;
+   --azul-claro-normal: #5081FB;
+   --azul-claro-hover: #7BA4FC;
+   --azul-claro-focus: #96B9FD;
+
+   --vermelho-actve: #F65151;
+
+   --sombras: rgb(0,0,0,0.24);  
+   --input-texto-normal: rgba(255, 255, 255, 0.16);
+   --input-texto-hover:  rgba(255, 255, 255, 0.24); 
+
+   --item-azul-menu-normal: rgba(80, 129, 251, 0.16);
+   --item-azul-menu-hover: rgba(80, 129, 251, 0.64);
+}
+
+body{
+   background: var(--azul-escuro-corpo);
+   color: #FFFFFF;
+   font-family: Inter;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.sidebar--titulo{
+   letter-spacing: 0.4em;
+   text-transform: uppercase;
+   font-size: 12px;
+   line-height: 18px;
+}
+
+.texto--input{
+   background-color: var(--input-texto-normal);
+   border-radius: 8px;
+   border: none;
+   box-sizing: border-box;
+   color: #FFFFFF;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+   padding: 16px 14px;
+   transition: .3s;
+}
+
+.texto--input:hover{
+   background-color: var(--input-texto-hover);
+}
+
+.texto--input::placeholder{
+   color: #FFFFFF;
+   opacity: 64%;
+}
