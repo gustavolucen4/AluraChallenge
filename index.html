@@ -8,6 +8,9 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/base.css">
       <link rel="stylesheet" href="css/nav-bar.css">
       <link rel="stylesheet" href="css/corpo.css">
@@ -15,6 +18,9 @@
       <link rel="stylesheet" href="css/projeto/projeto.css">
       <link rel="stylesheet" href="css/projeto/seu-projeto.css">
       <link rel="stylesheet" href="css/projeto/personalizacao.css">
+      <link rel="stylesheet" href="css/editor/editor.css">
+      <link rel="stylesheet" href="css/editor/campo.css">
+      <link rel="stylesheet" href="css/editor/botao-highlight.css">
    
       
       <title>Alura DEV</title>
@@ -22,7 +28,7 @@
    <body>
       
       <header class="cabecalho">
-         <img class="cabecalho__logo" src="img/logo__alura/Logologo__aluraDEV.svg" alt="logo alura dev">
+         <div class="cabecalho__container"><img class="cabecalho__logo" src="img/logo__alura/Logologo__aluraDEV.svg" alt="logo alura dev"></div>
 
          <input class="cabecalho__pesquisa texto--input" type="text" placeholder="Busque por algo">
 
@@ -40,6 +46,31 @@
                <a class="menu__link" href="#"><img class="link__img link--ativo" src="img/menu/editor-img.svg" alt=""><p class="link__text link--ativo">Editor de código</p></a>
                <a class="menu__link" href="#"><img class="link__img" src="img/menu/comunidade-img.svg" alt=""><p class="link__text">Comunidade</p></a>
             </nav>
+         </section>
+
+         <section class="editor">
+
+            <div class="campo">
+               <div class="campo__circulos">
+                  <div class="circulo"></div>
+                  <div class="circulo"></div>
+                  <div class="circulo"></div>
+               </div>
+               <textarea class="campo__input" spellcheck="false">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+   const go = (f, seed, acc) => {
+      const res = f(seed)
+      return res ? go(f, res[1], acc.concat([res[0]])) : acc
+   }
+   return go(f, seed, [])
+}</textarea>
+            </div>
+            
+            <button class="editor__botao">Visualizar com o highlight</button>
          </section>
 
          <section class="projeto">

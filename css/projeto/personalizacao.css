@@ -16,6 +16,7 @@
    border: 1px solid #FFFFFF;
    height: 56px;
    margin-top: 1rem;
+   transition: .3s;
    width: 272px;
 }
 
@@ -26,6 +27,11 @@
 .personalizacao__cor[type='color']::-webkit-color-swatch {
    border-radius: 4px;
    border: none;
+}
+
+.personalizacao__cor:hover{
+   cursor: pointer;
+   background-color: var(--input-texto-hover);
 }
 
 .personalizacao__botao{

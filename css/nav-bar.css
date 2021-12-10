@@ -5,6 +5,10 @@
    padding: 2rem;
 }
 
+.cabecalho__container{
+   width: 189px;
+}
+
 .cabecalho__logo{
    width: 145px;
 }
@@ -16,8 +20,10 @@
 }
 
 .cabecalho__perfil{
+   width: 272px;
    align-items: center; 
    display: flex;
+   justify-content: flex-end;
 }
 
 .perfil__img{
