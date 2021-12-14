@@ -15,3 +15,18 @@
    width: 272px;
    height: 80px;
 }
+
+@media screen and (max-width: 1300px) {
+   
+   .seu-projeto{
+      margin-top: 2.5rem;
+   }
+
+   .seu-projeto__nome{
+      width: 100%;
+   }
+
+   .seu-projeto__descricao{
+      width: 100%;
+   }
+}

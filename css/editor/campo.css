@@ -45,7 +45,6 @@
    border-radius: 8px;
    border: none;
    box-sizing: border-box;
-   box-sizing: border-box;
    color: #FFFFFF;
    font-family: Roboto Mono;
    font-size: 14px;
@@ -71,4 +70,19 @@
    background-color: #ffffff5e; 
    border-radius: 20px;
    border: 6px solid #141414; 
+}
+
+@media screen and (max-width: 1300px) {
+   
+   .campo{
+      width: 100%;
+   }
+
+   .campo__input{
+      width: calc(100% - 4rem);
+   }
+
+   .circulo:nth-child(3){
+      margin-right: 0;
+   }
 }

@@ -41,3 +41,10 @@
 .menu__link:hover :is(.link__text){
    opacity: 72%;
 }
+
+@media screen and (max-width: 1300px) {
+   
+   .menu{
+      display: none;
+   }
+}

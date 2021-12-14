@@ -1,5 +1,19 @@
 .corpo{
-   padding: 8px 2rem;
+   padding: 1rem 2rem;
    display: flex;
    justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) {
+   
+   .corpo{
+      flex-direction: column;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   
+   .corpo{
+      padding: 8px 1rem;
+   }
 }

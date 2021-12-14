@@ -23,3 +23,10 @@
 .editor__botao:focus{
    background-color: rgba(80, 129, 251, 0.24);
 }
+
+@media screen and (max-width: 1300px) {
+   
+   .editor__botao{
+      width: 100%;
+   }
+}

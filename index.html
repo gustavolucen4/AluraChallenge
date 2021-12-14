@@ -32,10 +32,18 @@
 
          <input class="cabecalho__pesquisa texto--input" type="text" placeholder="Busque por algo">
 
-         <div class="cabecalho__perfil">
-            <div class="perfil__img"></div>
-            <p class="perfil__nome">Gustavo</p>
+         <div class="cabecalho__perfil--espacamento">
+            <div class="cabecalho__perfil">
+               <div class="perfil__img"></div>
+               <p class="perfil__nome">Gustavo</p>
+            </div>
          </div>
+
+         <div class="cabecalho__mobile">
+            <img class="mobile__pesquisa" src="img/menu/buscar-img.svg" alt="atalho para busca">
+            <img class="mobile__menu" src="img/menu/Menu hamburguer.svg" alt="menu mobile">
+         </div>
+
       </header>
 
       <main class="corpo">
@@ -85,15 +93,14 @@ const unfold = (f, seed) => {
             <div class="personalizacao">
                <h2 class="sidebar--titulo">Personalização</h2>
 
-               <datalist id="code">
-                  <option value="JavaScrip">
-                  <option value="HTML">
-                  <option value="CSS">
-               </datalist>
-
-               <input class="personalizacao__codigo texto--input" type="text" list="code" placeholder="Escolha um codigo">
-
-               <input class="personalizacao__cor" type="color">
+               <div class="personalizacao__container">
+                  <select class="personalizacao__codigo texto--input">
+                     <option value="JavaScrip">JavaScrip</option>
+                     <option value="HTML">HTML</option>
+                     <option value="CSS">CSS</option>
+                  </select>
+                  <input class="personalizacao__cor" type="color" value="#6BD1FF">
+               </div>
 
                <button class="personalizacao__botao">Salvar projeto</button>
             </div>
